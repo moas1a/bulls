@@ -28,8 +28,8 @@ void rand_4(char ar[], int n)
     Move2Array(rand() % 9999, ar, n);
 }
 
-
-bool SameDigits(char ar[], int n)//создаем цикл для сравнивания одинаковых чисел
+//создаем цикл для сравнивания одинаковых чисел
+bool SameDigits(char ar[], int n)
 {
     int count = 0;
     for (int i = 0; i < N; i++)
@@ -125,6 +125,7 @@ int main()
         std::cout << "Попытка №: " << raz << "Быков " << bools << "; Коров " << cows << std::endl;
 
 
+        // если не угадали - переходим к запросу следующего числа у пользователя
  } while (bools != 4);
 
 }
