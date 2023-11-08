@@ -20,10 +20,10 @@ int main()
 
     std::cout << "n= " << n << std::endl;
 
-    for (int i = 0; i < N; i++)
+    for (int i = N-1 ; i >= 0; i--)
   
     {
-        mech[i] = n % 10;
+        mech[i] = '0' + n % 10;
         n = n / 10;
 
     }
